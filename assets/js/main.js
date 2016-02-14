@@ -1,5 +1,6 @@
 var TestWeb = window.TestWeb || (window.TestWeb = {});
 //var $                   = require('jquery');
+var global;
 global.jQuery           = $;
 window.$                = $;
 //var _                   = require('underscore');
