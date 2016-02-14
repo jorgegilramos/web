@@ -1,8 +1,8 @@
 module.exports = {
-  entry: "./assets/js/main.js",
+  entry: "./web/assets/js/main.js",
   output: {
     path: __dirname,
-    filename: "./assets/js/jquery-2.1.1.min.js"
+    filename: "./web/assets/js/jquery-2.1.1.min.js"
   },
   module: {
     loaders: [
