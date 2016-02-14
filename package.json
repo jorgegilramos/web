@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jorgegilramos/me.git"
+    "url": "https://github.com/jorgegilramos/web.git"
   },
   "author": "@jorgegil",
   "license": "Creative Commons Attribution-NonCommercial 3.0",
   "bugs": {
-    "url": "https://github.com/jorgegilramos/testweb/issues"
+    "url": "https://github.com/jorgegilramos/web/issues"
   },
-  "homepage": "https://github.com/jorgegilramos/testweb",
+  "homepage": "http://jorgegilramos.github.io/web",
   "dependencies": {
     "backbone": "^1.2.1",
     "css-loader": "^0.15.1",
