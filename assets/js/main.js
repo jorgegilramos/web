@@ -5,6 +5,7 @@ window.$                = $;
 var _                   = require('underscore');
 var Backbone            = require('backbone');
 Backbone.$ = $;
+var Platform            = require('platform');
 
 var Models = {}
 
@@ -16,6 +17,7 @@ var AppModel = new Backbone.Model();
 
 TestWeb.Main = {
   init: function(){
+    $('html').addClass('platform-' + Platform.name.toLowerCase());
   }
 };
 TestWeb.Main.init();
