@@ -1,9 +1,9 @@
 var TestWeb = window.TestWeb || (window.TestWeb = {});
-var $                   = require('jquery');
+//var $                   = require('jquery');
 global.jQuery           = $;
 window.$                = $;
-var _                   = require('underscore');
-var Backbone            = require('backbone');
+//var _                   = require('underscore');
+//var Backbone            = require('backbone');
 Backbone.$ = $;
 //var Platform            = require('platform');
 
