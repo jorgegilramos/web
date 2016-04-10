@@ -16,6 +16,7 @@ var AppModel = new Backbone.Model();
 
 TestWeb.Main = {
   init: function(){
+    console.log("Initialize");
   }
 };
 TestWeb.Main.init();
