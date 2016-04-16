@@ -1,3 +1,10 @@
+# Site settings
+title: Your awesome title
+email: your-email@domain.com
+description: ""
+baseurl: "/web"
+url: "http://jorgegilramos.github.io"
+
 exclude: [node_modules, CNAME, webpack.config.js, package.json, README.md]
 sass:
   sass_dir: assets/css
