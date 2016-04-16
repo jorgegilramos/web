@@ -20,7 +20,7 @@ var AppModel = new Backbone.Model();
 TestWeb.Main = {
   init: function(){
     //$('html').addClass('platform-' + Platform.name.toLowerCase());
-    alert('Loading ...');
+    console.log("Initialize");
   }
 };
 TestWeb.Main.init();
