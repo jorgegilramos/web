@@ -11,8 +11,7 @@ Backbone.$ = $;
 var Models = {}
 
 var Views = {
-  //Intro:                require('./views/intro.js')
-  Intro:                './views/intro.js'
+  Intro:                require('./views/intro.js')
 };
 
 var AppModel = new Backbone.Model();
