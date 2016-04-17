@@ -5,7 +5,10 @@ description: ""
 baseurl: "/web"
 url: "http://jorgegilramos.github.io"
 
-exclude: [node_modules, CNAME, webpack.config.js, package.json, README.md]
+exclude: [node_modules, CNAME, webpack.config.js, package.json, README.md, .git]
 sass:
   sass_dir: assets/css
   style: :compressed
+  
+include:
+  - .nojekyll
