@@ -1,8 +1,8 @@
 ---
 layout: page
-title: 01Big Data
+title: Big Data
 permalink: /bigdata/
-order: 2
+order: 1
 ---
 
 This is the Big Data Area

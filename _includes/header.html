@@ -17,9 +17,16 @@
         </svg>
       </a>-->
       <div class="trigger">
-        {% for page in site.pages %}
+        <!--{% for page in site.pages %}
           {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
-        {% endfor %}
+        {% endfor %}-->
+        <ul class="nav top-2">
+          <li><a {% if page.url == "/" + site.baseurl %}class="active"{% endif %} href="{{site.baseurl}}/">Home</a></li>
+          {% assign sorted_areas = site.areas | sort:"order" %}
+          {% for area in sorted_areas %}
+          <li><a {% if page.url == area.url %}class="active"{% endif %} href="{{ area.url | prepend: site.baseurl }}">{{ area.title }}</a></li>
+          {% endfor %}
+        </ul>
       </div>
     </nav>
 

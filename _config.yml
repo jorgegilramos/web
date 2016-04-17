@@ -12,3 +12,8 @@ sass:
   
 include:
   - .nojekyll
+
+collections:
+  areas:
+    output: true
+
