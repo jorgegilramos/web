@@ -2,7 +2,7 @@
 layout: default
 title: Data Science
 permalink: /datascience/
-order: 2
+order: 3
 description: Ricardo Jorge Gil Ramos - Personal Page
 ---
 
