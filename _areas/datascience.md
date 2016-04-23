@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Javascript
-permalink: /javascript/
+title: Data Science
+permalink: /datascience/
 order: 2
 description: Ricardo Jorge Gil Ramos - Personal Page
 ---
 
-This is the javascript Area
+This is the Data Science Area
