@@ -10,4 +10,20 @@
   <link rel="stylesheet" href="{{ site.baseurl }}/fonts/font-awesome.min.css" />
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/js/mmenu/css/jquery.mmenu.all.css"/-->
   <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css"/>
+  
+  {% if page.kind == 'post' %}
+    <meta property="og:type" content="article" />
+    {% if page.categories %}
+      {% for category in page.categories limit:1 %}
+        <meta property="article:section" content="{{ category }}" />
+      {% endfor %}
+    {% endif %}
+    {% if page.tags %}
+      {% for tag in page.tags %}
+        <meta property="article:tag" content="{{ tag }}" />
+      {% endfor %}
+    {% endif %}
+  {% else %}
+    <meta property="og:type" content="website" />
+  {% endif %}
 </head>

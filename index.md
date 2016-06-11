@@ -5,16 +5,6 @@ title: Ricardo Jorge Gil Ramos - Personal Page
 description: Ricardo Jorge Gil Ramos - Personal Page
 ---
 
-  <h1>Posts</h1>
-
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
   <section>
     <div id="center-body" class="wrap">
 {% include slider.html %}
@@ -39,7 +29,7 @@ description: Ricardo Jorge Gil Ramos - Personal Page
           <p>
           </p>
       </section>
-        <section class="content-features">
+      <section class="content-features">
           <p>
             <a class="toc-item" title="Features" id="Features"></a>
           </p>
@@ -125,6 +115,20 @@ description: Ricardo Jorge Gil Ramos - Personal Page
             </div>
           </div>
           <p style="clear:both"></p>
+      </section>
+      <section class="content-posts">
+        <p>
+          <a class="toc-item" title="Posts" id="Posts"></a>
+        </p>
+        <h2>Posts</h2>
+        <ul class="posts">
+          {% for post in site.posts %}
+            <li>
+              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+              <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+            </li>
+          {% endfor %}
+        </ul>
       </section>
     </div>
   </section>

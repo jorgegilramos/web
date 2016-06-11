@@ -2,14 +2,34 @@
 layout: default
 ---
 <div class="post">
-
-  <header class="post-header">
+  <!--header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
     <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} - {{ page.author }}{% endif %}{% if page.meta %} - {{ page.meta }}{% endif %}</p>
   </header>
 
   <article class="post-content">
     {{ content }}
-  </article>
+  </article-->
+  
+<article class="blog-post">
+  <div class="row entry">
+    <div class="col-sm-1 scrollimation fade-up in">
+      <div id="bigdata-entry-8" class="media">
+        <div style="overflow: hidden" class="media-body">
+          <h4>{{ page.title }}</h4>
+          <time datetime="{{ page.date | date: "%F" }}">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} - {{ page.author }}{% endif %}{% if page.meta %} - {{ page.meta }}{% endif %}</time>
+            {% if page.tags.size > 0 %}
+              <ul class="post-tags">
+                {% for tag in page.tags %}
+                  <li><a href="{{ site.baseurl }}/tags/#{{ tag }}-ref">#{{ tag }}</a></li>
+                {% endfor %}
+              </ul>
+            {% endif %}          
+            {{ content }}
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
 
 </div>
