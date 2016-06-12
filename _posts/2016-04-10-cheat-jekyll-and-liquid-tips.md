@@ -1,7 +1,7 @@
 ---
 layout: post
 kind: post
-title: Cheat jekyll tips
+title: Cheat jekyll and Liquid tips
 tags:
 - web
 - jekyll
