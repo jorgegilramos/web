@@ -166,12 +166,12 @@ $(function(){
   });
   
   // Features navigation
-  $("#bigdata-feature, #bi-feature").on("click", function(){location.href="bigdata.html";});
-  $("#datascience-feature, #dashboards-feature").on("click", function(){location.href="datascience.html";});
-  $("#html5-feature, #css3-feature").on("click", function(){location.href="html5.html";});
-  $("#javascript-feature").on("click", function(){location.href="javascript.html";});
-  $("#responsive-feature").on("click", function(){location.href="design.html";});
-  $("#geolocalization-feature, #maps-feature").on("click", function(){location.href="maps.html";});
+  $("#bigdata-feature, #bi-feature").on("click", function(){location.href="bigdata/";});
+  $("#datascience-feature, #dashboards-feature").on("click", function(){location.href="datascience/";});
+  $("#html5-feature, #css3-feature").on("click", function(){location.href="html5/";});
+  $("#javascript-feature").on("click", function(){location.href="javascript/";});
+  $("#responsive-feature").on("click", function(){location.href="design/";});
+  $("#geolocalization-feature, #maps-feature").on("click", function(){location.href="maps/";});
 });
 
 // Generates a table of contents based on a.toc-item elements throughout the

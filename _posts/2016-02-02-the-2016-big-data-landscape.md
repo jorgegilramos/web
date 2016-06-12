@@ -4,6 +4,7 @@ kind: post
 title: The 2016 Big Data Landscape
 tags:
 - Big Data
+entry: bigdata-entry-8
 ---
 
 <p>The 2016 Big Data Landscape by <a href="https://www.linkedin.com/in/matt-turck-353164" target="_blank">Matt Turk, Managing Director at FirstMark Capital</a>.</p>

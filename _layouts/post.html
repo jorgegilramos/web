@@ -14,7 +14,7 @@ layout: default
 <article class="blog-post">
   <div class="row entry">
     <div class="col-sm-1 scrollimation fade-up in">
-      <div id="bigdata-entry-8" class="media">
+      <div id="{{ page.entry }}" class="media">
         <div style="overflow: hidden" class="media-body">
           <h4>{{ page.title }}</h4>
           <time datetime="{{ page.date | date: "%F" }}">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} - {{ page.author }}{% endif %}{% if page.meta %} - {{ page.meta }}{% endif %}</time>
