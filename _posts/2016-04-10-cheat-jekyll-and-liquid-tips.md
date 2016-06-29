@@ -7,6 +7,7 @@ tags:
 - web
 - jekyll
 - liquid
+entry: references-entry-3
 ---
 
 Markdown *here*!!
