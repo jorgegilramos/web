@@ -5,5 +5,33 @@ permalink: /datascience/
 order: 3
 description: Ricardo Jorge Gil Ramos - Personal Page
 ---
-
-This is the Data Science Area
+<div id="center-body" class="wrap">
+  <div id="bigdata-page" class="content-body" style="margin:20px 0px">
+    <h2><i class="fa fa-warning fa-lg"></i> Data Science: You are in the Data Science area.</h2>
+    {% for post in site.posts %}
+      {% if post.tags contains "Data Science" or post.tags contains "Data Analytics" %}
+      <hr/>
+      <article class="blog-post">
+        <div class="row entry">
+          <div class="col-sm-1 scrollimation fade-up in">
+            <div id="{{ post.entry }}" class="media">
+              <div style="overflow: hidden" class="media-body">
+                <h4>{{ post.title }}</h4>
+                <time datetime="{{ post.date | date: "%F" }}">{{ post.date | date: "%b %-d, %Y" }}{% if post.author %} - {{ post.author }}{% endif %}{% if post.meta %} - {{ post.meta }}{% endif %}</time>
+                {% if post.tags.size > 0 %}
+                  <ul class="post-tags">
+                    {% for tag in post.tags %}
+                      <li><a href="{{ site.baseurl }}/tags/#{{ tag }}-ref">#{{ tag }}</a></li>
+                    {% endfor %}
+                  </ul>
+                {% endif %}          
+                {{ post.content | markdownify }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>

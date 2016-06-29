@@ -3,6 +3,7 @@ layout: post
 kind: post
 title: Cheat jekyll and Liquid tips
 tags:
+- References
 - web
 - jekyll
 - liquid
