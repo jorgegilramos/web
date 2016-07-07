@@ -12,7 +12,8 @@
         {% for post in site.posts %}
           {% assign has_tag = false %}
           {% for tag1 in post.tags %}
-            {% if area.tags contains tag1[1] %}
+            {{ tag1[1] }}
+            {% if area.tags[1] contains tag1[1] %}
               {% assign has_tag = true %}
             {% endif %}
           {% endfor %}
