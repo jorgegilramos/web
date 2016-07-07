@@ -10,6 +10,7 @@
     <div>
       <ul id="menu-bigdata">
         {% for post in site.posts %}
+          {{post.title}}
           {% assign has_tag = false %}
           {% for tag1 in post.tags %}
             {{ tag1[1] }}
