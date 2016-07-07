@@ -5,8 +5,8 @@ title: Ricardo Jorge Gil Ramos - Personal Page
 description: Ricardo Jorge Gil Ramos - Personal Page
 ---
 
-  <section>
-    <div id="center-body" class="wrap">
+<section>
+  <div id="center-body" class="wrap">
 {% include slider.html %}
 {% include toc.html %}
     <div class="content-body">
@@ -131,6 +131,7 @@ description: Ricardo Jorge Gil Ramos - Personal Page
         </ul>
       </section>
     </div>
-  </section>
-  <!--<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>-->
+  </div>
+</section>
+<!--<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>-->
 
