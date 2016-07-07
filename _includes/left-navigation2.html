@@ -10,7 +10,13 @@
     <div>
       <ul id="menu-bigdata">
         {% for post in site.posts %}
-        {% if post.tags contains area.tags %}
+          {% assign has_tag = false %}
+          {% for tag1 in post.tags %}
+            {% if area.tags contains tag1[1] %}
+              {% assign has_tag = true %}
+            {% endif %}
+          {% endfor %}
+        {% if has_tag %}
         <li>
           <a href="{{site.baseurl}}{{area.permalink}}"><i class="fa fa-table" style="color:rgba(0, 0, 0, 0.3)"></i> &nbsp; {{post.title}}</a>
         </li>
