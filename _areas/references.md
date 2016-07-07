@@ -4,6 +4,8 @@ title: References
 permalink: /references/
 order: 6
 description: Ricardo Jorge Gil Ramos - Personal Page
+tags:
+- References
 ---
 <div id="center-body" class="wrap">
   <div id="bigdata-page" class="content-body" style="margin:20px 0px">
