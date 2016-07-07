@@ -1,0 +1,27 @@
+<nav id="mainMenu" class="mm-menu mm-offcanvas" style="width:300px; font-family:Arial,Helvetica,Verdana;">
+<ul>
+  <li class="mm-selected">
+    <a href="{{site.baseurl}}/"><i class="fa fa-home" style="color:rgba(0, 0, 0, 0.3)"></i> &nbsp; Home</a>
+  </li>
+  {% assign sorted_areas = site.areas | sort:"order" %}
+  {% for area in sorted_areas %}  
+  <li>
+    <span><a> &nbsp; {{ area.title }}</a></span>
+    <div>
+      <ul id="menu-bigdata">
+        {% for post in site.posts %}
+        {% if post.tags contains area.tags %}
+        <li>
+          <a href="{{site.baseurl}}{{area.permalink}}"><i class="fa fa-table" style="color:rgba(0, 0, 0, 0.3)"></i> &nbsp; {{post.title}}</a>
+        </li>
+        {% endif %}
+        {% endfor  %}
+      </ul>
+    </div>
+  </li>
+  {% endfor %}
+</ul>
+<div id="menu-footer">
+  <p style="margin:10px 0; color:rgba(0,​ 0,​ 0,​ 0.3)!important">&nbsp;Ricardo Jorge Gil Ramos &copy; 2015</p>
+</div>
+</nav>

@@ -4,6 +4,8 @@ title: Javascript
 permalink: /javascript/
 order: 2
 description: Ricardo Jorge Gil Ramos - Personal Page
+tags:
+- javascript
 ---
 <div id="center-body" class="wrap">
   <div id="bigdata-page" class="content-body" style="margin:20px 0px">
