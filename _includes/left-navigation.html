@@ -3,93 +3,29 @@
   <li class="mm-selected">
     <a href="{{site.baseurl}}/"><i class="fa fa-home" style="color:rgba(0, 0, 0, 0.3)"></i> &nbsp; Home</a>
   </li>
+  {% assign sorted_areas = site.areas | sort:"order" %}
+  {% for area in sorted_areas %}  
   <li>
-    <span><a> &nbsp; Big Data</a></span>
+    <span><a> &nbsp; {{ area.title }}</a></span>
     <div>
-      <ul id="menu-bigdata">
-        <li>
-          <a href="{{site.baseurl}}/bigdata/"><i class="fa fa-table" style="color:rgba(0, 0, 0, 0.3)"></i> &nbsp; Apache Spark - Introduction to Spark Streaming and Deep dive</a>
-        </li>
-        <li>
-          <a href="{{site.baseurl}}/bigdata/"><i class="fa fa-table" style="color:rgba(0, 0, 0, 0.3)"></i> &nbsp; 3 Themes for Data Governance in 2016</a>
-        </li>
-        <li>
-          <a href="{{site.baseurl}}/bigdata/"><i class="fa fa-table" style="color:rgba(0, 0, 0, 0.3)"></i> &nbsp; 100 open source Big Data architecture papers for data professionals</a>
-        </li>
-        <li>
-          <a href="{{site.baseurl}}/bigdata/"><i class="fa fa-table" style="color:rgba(0, 0, 0, 0.3)"></i> &nbsp; Apache Flink & How It Compares To Apache Spark</a>
-        </li>
-        <li>
-          <a href="{{site.baseurl}}/bigdata/"><i class="fa fa-table" style="color:rgba(0, 0, 0, 0.3)"></i> &nbsp; Apache Spark vs MapReduce</a>
-        </li>
-        <li>
-          <a href="{{site.baseurl}}/bigdata/"><i class="fa fa-table" style="color:rgba(0, 0, 0, 0.3)"></i> &nbsp; The Hadoop Ecosystem Table</a>
-        </li>
-        <li>
-          <a href="{{site.baseurl}}/bigdata/"><i class="fa fa-table" style="color:rgba(0, 0, 0, 0.3)"></i> &nbsp; Now, What Is Hadoop? And What’s Supported?</a>
-        </li>
+      <ul id="menu-{{area.permalink | replace:'/', ''}}">
+        {% for post in site.posts %}
+          {% assign has_tag = false %}
+          {% for tag in post.tags %}
+            {% if area.tags contains tag %}
+              {% assign has_tag = true %}
+            {% endif %}
+          {% endfor %}
+          {% if has_tag %}
+          <li>
+            <a href="{{site.baseurl}}{{area.permalink}}"><i class="fa fa-table" style="color:rgba(0, 0, 0, 0.3)"></i> &nbsp; {{post.title}}</a>
+          </li>
+          {% endif %}
+        {% endfor  %}
       </ul>
     </div>
   </li>
-  <li>
-    <span><a> &nbsp; Javascript</a></span>
-    <div>
-      <ul id="menu-javascript">
-        <li>
-          <a href="{{site.baseurl}}/javascript/"><i class="fa fa-table" style="color:rgba(0, 0, 0, 0.3)"></i> &nbsp; screen-dpi-detector</a>
-        </li>
-        <li>
-          <a href="{{site.baseurl}}/javascript/"><i class="fa fa-table" style="color:rgba(0, 0, 0, 0.3)"></i> &nbsp; hdpi-detector</a>
-        </li>
-      </ul>
-    </div>
-  </li>
-  <li>
-    <span><a> &nbsp; Data Science</a></span>
-    <div>
-      <ul id="menu-datascience">
-        <li>
-          <a href="{{site.baseurl}}/datascience/"><i class="fa fa-table" style="color:rgba(0, 0, 0, 0.3)"></i> &nbsp; Why you should use Spark for machine learning</a>
-        </li>
-        <li>
-          <a href="{{site.baseurl}}/datascience/"><i class="fa fa-table" style="color:rgba(0, 0, 0, 0.3)"></i> &nbsp; Google says it's 'rethinking everything' around machine learning</a>
-        </li>
-      </ul>
-    </div>
-  </li>
-  <li>
-    <span><a> &nbsp; Maps</a></span>
-    <div>
-      <ul id="menu-maps">
-        <li>
-          <a href="{{site.baseurl}}/maps/"><i class="fa fa-table" style="color:rgba(0, 0, 0, 0.3)"></i> &nbsp; How Spatial Analysis Leads to Insight</a>
-        </li>
-      </ul>
-    </div>
-  </li>
-  <li>
-    <span><a> &nbsp; Design</a></span>
-    <div>
-      <ul id="menu-design">
-        <li>
-          <a href="{{site.baseurl}}/design/"><i class="fa fa-table" style="color:rgba(0, 0, 0, 0.3)"></i> &nbsp; Beyond Usability: Designing With Persuasive Patterns</a>
-        </li>
-      </ul>
-    </div>
-  </li>
-  <li>
-    <span><a> &nbsp; References</a></span>
-    <div>
-      <ul id="menu-references">
-        <li>
-          <a href="{{site.baseurl}}/references/"><i class="fa fa-table" style="color:rgba(0, 0, 0, 0.3)"></i> &nbsp; Scala Cheatsheet</a>
-        </li>
-        <li>
-          <a href="{{site.baseurl}}/references/"><i class="fa fa-table" style="color:rgba(0, 0, 0, 0.3)"></i> &nbsp; Can I Use</a>
-        </li>
-      </ul>
-    </div>
-  </li>
+  {% endfor %}
 </ul>
 <div id="menu-footer">
   <p style="margin:10px 0; color:rgba(0,​ 0,​ 0,​ 0.3)!important">&nbsp;Ricardo Jorge Gil Ramos &copy; 2015</p>
