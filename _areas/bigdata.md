@@ -9,7 +9,7 @@ tags:
 ---
 <div id="center-body" class="wrap">
   <div id="bigdata-page" class="content-body" style="margin:20px 0px">
-    <h2><i class="fa fa-warning fa-lg"></i> Big Data: You are in the Big Data area.</h2>
+    <!--<h2><i class="fa fa-warning fa-lg"></i> Big Data: You are in the Big Data area.</h2>-->
     {% for post in site.posts %}
       {% if post.tags contains "Big Data" %}
       <hr/>
@@ -21,11 +21,16 @@ tags:
                 <h4>{{ post.title }}</h4>
                 <time datetime="{{ post.date | date: "%F" }}">{{ post.date | date: "%b %-d, %Y" }}{% if post.author %} - {{ post.author }}{% endif %}{% if post.meta %} - {{ post.meta }}{% endif %}</time>
                 {% if post.tags.size > 0 %}
-                  <ul class="post-tags">
+                  <!--<ul class="post-tags">
                     {% for tag in post.tags %}
                       <li><a href="{{ site.baseurl }}/tags/#{{ tag }}-ref">#{{ tag }}</a></li>
                     {% endfor %}
-                  </ul>
+                  </ul>-->
+                  <div class="post-taglist">
+                    {% for tag in post.tags %}
+                      <a href="{{ site.baseurl }}/tags/#{{ tag }}-ref" class="post-tag">{{ tag }}</a>
+                    {% endfor %}
+                  </div>
                 {% endif %}          
                 {{ post.content | markdownify }}
               </div>

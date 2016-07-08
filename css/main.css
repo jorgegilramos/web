@@ -509,6 +509,25 @@ ol.toc.sticky {
     font-family: "webfont-thin";
     src: url("../fonts/webfont/webfont-thin.eot?#iefix") format("embedded-opentype"), url("../fonts/webfont/webfont-thin.woff") format("woff");
 }
+/* post tag */
+.post-tag {
+    color: #39739d;
+    background-color: #e1ecf4;
+    border-color: transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 0;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1;
+    margin: 2px 2px 2px 0;
+    padding: .4em .5em;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    transition: all .15s ease-in-out;
+    white-space: nowrap;
+}
 
 /* tagcloud */
 .widget_tag_cloud .tagcloud , #tagcloud {
