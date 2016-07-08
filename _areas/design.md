@@ -8,10 +8,10 @@ tags:
 - Design
 ---
 <div id="center-body" class="wrap">
-  <div id="{{page.permalink | replace: '/', ''}}-page" class="content-body" style="margin:20px 0px">
+  <div id="design-page" class="content-body" style="margin:20px 0px">
     <!--<h2><i class="fa fa-warning fa-lg"></i> Design: You are in the Design area.</h2>-->
     {% for post in site.posts %}
-      {% if post.tags contains "Big Data" %}
+      {% if post.tags contains "Design" %}
       <hr/>
       <article class="blog-post">
         <div class="row entry">
