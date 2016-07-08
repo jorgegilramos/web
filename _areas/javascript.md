@@ -8,7 +8,7 @@ tags:
 - javascript
 ---
 <div id="center-body" class="wrap">
-  <div id="{{area.permalink | replace '/' ''}}-page" class="content-body" style="margin:20px 0px">
+  <div id="{{permalink | replace '/' ''}}-page" class="content-body" style="margin:20px 0px">
     <!--<h2><i class="fa fa-warning fa-lg"></i> Javascript: You are in the Javascript area.</h2>-->
     {% for post in site.posts %}
       {% if post.tags contains "javascript" %}
