@@ -8,7 +8,7 @@ tags:
 - Design
 ---
 <div id="center-body" class="wrap">
-  <div id="{{permalink | replace '/' ''}}-page" class="content-body" style="margin:20px 0px">
+  <div id="{{permalink | replace: '/', ''}}-page" class="content-body" style="margin:20px 0px">
     <!--<h2><i class="fa fa-warning fa-lg"></i> Design: You are in the Design area.</h2>-->
     {% for post in site.posts %}
       {% if post.tags contains "Big Data" %}
