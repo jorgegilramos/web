@@ -26,7 +26,7 @@ tags:
                       <a href="{{ site.baseurl }}/tags/#{{ tag }}-ref" class="post-tag">{{ tag }}</a>
                     {% endfor %}
                   </div>
-                {% endif %}          
+                {% endif %}
                 {{ post.content | markdownify }}
               </div>
             </div>
