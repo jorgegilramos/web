@@ -8,8 +8,8 @@ tags:
 - javascript
 ---
 <div id="center-body" class="wrap">
-  <div id="bigdata-page" class="content-body" style="margin:20px 0px">
-    <h2><i class="fa fa-warning fa-lg"></i> Javascript: You are in the Javascript area.</h2>
+  <div id="{{area.permalink | replace '/' ''}}-page" class="content-body" style="margin:20px 0px">
+    <!--<h2><i class="fa fa-warning fa-lg"></i> Javascript: You are in the Javascript area.</h2>-->
     {% for post in site.posts %}
       {% if post.tags contains "javascript" %}
       <hr/>
@@ -21,11 +21,11 @@ tags:
                 <h4>{{ post.title }}</h4>
                 <time datetime="{{ post.date | date: "%F" }}">{{ post.date | date: "%b %-d, %Y" }}{% if post.author %} - {{ post.author }}{% endif %}{% if post.meta %} - {{ post.meta }}{% endif %}</time>
                 {% if post.tags.size > 0 %}
-                  <ul class="post-tags">
+                  <div class="post-taglist">
                     {% for tag in post.tags %}
-                      <li><a href="{{ site.baseurl }}/tags/#{{ tag }}-ref">#{{ tag }}</a></li>
+                      <a href="{{ site.baseurl }}/tags/#{{ tag }}-ref" class="post-tag">{{ tag }}</a>
                     {% endfor %}
-                  </ul>
+                  </div>
                 {% endif %}          
                 {{ post.content | markdownify }}
               </div>
