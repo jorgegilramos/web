@@ -18,7 +18,7 @@
           {% endfor %}
           {% if has_tag %}
           <li>
-            <a href="{{site.baseurl}}{{area.permalink}}"><i class="fa fa-table" style="color:rgba(0, 0, 0, 0.3)"></i> &nbsp; {{post.title}}</a>
+            <a href="{{ post.url | prepend: site.baseurl }}"><i class="fa fa-table" style="color:rgba(0, 0, 0, 0.3)"></i> &nbsp; {{post.title}}</a>
           </li>
           {% endif %}
         {% endfor  %}
