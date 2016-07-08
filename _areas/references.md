@@ -21,11 +21,11 @@ tags:
                 <h4>{{ post.title }}</h4>
                 <time datetime="{{ post.date | date: "%F" }}">{{ post.date | date: "%b %-d, %Y" }}{% if post.author %} - {{ post.author }}{% endif %}{% if post.meta %} - {{ post.meta }}{% endif %}</time>
                 {% if post.tags.size > 0 %}
-                  <ul class="post-tags">
+                  <div class="post-taglist">
                     {% for tag in post.tags %}
-                      <li><a href="{{ site.baseurl }}/tags/#{{ tag }}-ref">#{{ tag }}</a></li>
+                      <a href="{{ site.baseurl }}/tags/#{{ tag }}-ref" class="post-tag">{{ tag }}</a>
                     {% endfor %}
-                  </ul>
+                  </div>
                 {% endif %}
                 {{ post.content | markdownify }}
               </div>
