@@ -20,7 +20,7 @@ layout: default
           <time datetime="{{ page.date | date: "%F" }}">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} - {{ page.author }}{% endif %}{% if page.meta %} - {{ page.meta }}{% endif %}</time>
           {% if page.tags.size > 0 %}
             <div class="post-taglist">
-              {% for tag in post.tags %}
+              {% for tag in page.tags %}
                 <a href="{{ site.baseurl }}/tags/#{{ tag }}-ref" class="post-tag">{{ tag }}</a>
               {% endfor %}
             </div>
