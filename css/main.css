@@ -850,9 +850,10 @@ hr {
 }
 
 .blog-post {
-  border-radius: 10px;
+  /*border-radius: 10px;*/
   border: 1px solid #eee;
   margin-bottom: 0px;
+  margin-top: 20px;
   padding: 20px;
 }
 .blog-post:hover {

@@ -12,7 +12,6 @@ tags:
     <!--<h2><i class="fa fa-warning fa-lg"></i> Big Data: You are in the Big Data area.</h2>-->
     {% for post in site.posts %}
       {% if post.tags contains "Big Data" %}
-      <hr/>
       <article class="blog-post">
         <div class="row entry">
           <div class="col-sm-1 scrollimation fade-up in">

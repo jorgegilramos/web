@@ -13,7 +13,6 @@ tags:
     <!--<h2><i class="fa fa-warning fa-lg"></i> Data Science: You are in the Data Science area.</h2>-->
     {% for post in site.posts %}
       {% if post.tags contains "Data Science" or post.tags contains "Data Analytics" %}
-      <hr/>
       <article class="blog-post">
         <div class="row entry">
           <div class="col-sm-1 scrollimation fade-up in">

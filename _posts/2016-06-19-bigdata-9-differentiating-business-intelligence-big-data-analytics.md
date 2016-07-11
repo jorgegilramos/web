@@ -7,6 +7,7 @@ tags:
 - Business Intelligence
 - Data Analytics
 - Knowledge Discovery
+- Data Science
 entry: bigdata-entry-9
 ---
 
