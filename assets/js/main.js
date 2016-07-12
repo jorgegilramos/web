@@ -160,10 +160,10 @@ $(function(){
   // fancybox 
   //$(".fancy-modal-rss").fancybox();
 
-  /*$.scrollUp({
+  $.scrollUp({
     scrollTrigger: $("<a id='scrollUp' href='#top' class='fa fa-chevron-circle-up'></a>"),
     scrollText: ""
-  });*/
+  });
   
   // Features navigation
   $("#bigdata-feature, #bi-feature").on("click", function(){location.href="bigdata/";});

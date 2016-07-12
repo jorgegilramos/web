@@ -7,6 +7,7 @@ permalink: /tags/
 ---
 
 <section>
+{% include toc.html %}
   <div id="center-body" class="wrap">
     <div class="">
       <section class="content-tags">
@@ -14,7 +15,7 @@ permalink: /tags/
         <ul style="list-style: outside none none">
           {% for tag in site.tags %}
           <li>
-            <h2 id="#{{ tag[0] }}-ref">#{{ tag[0] }}</h2>
+            <h2 id="{{ tag[0] }}-ref" class="toc-item" >{{ tag[0] }}</h2>
             <ul>
               {% for post in tag[1] %}
                  <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
