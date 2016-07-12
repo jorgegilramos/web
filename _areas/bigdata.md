@@ -27,7 +27,7 @@ tags:
                   </ul>-->
                   <div class="post-taglist">
                     {% for tag in post.tags %}
-                      <a href="{{ site.baseurl }}/tags/#{{ tag }}-ref" class="post-tag">{{ tag }}</a>
+                      <a href="{{ site.baseurl }}/tags/#{{ tag }}" class="post-tag">{{ tag }}</a>
                     {% endfor %}
                   </div>
                 {% endif %}
