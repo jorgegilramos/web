@@ -3,7 +3,7 @@ layout: post
 kind: post
 title: Simulador de protocolos basados en directorio para la coherencia caché en multiprocesadores
 tags:
-- project
+- Project
 - Big Data
 - Cache memories
 entry: project-entry-2

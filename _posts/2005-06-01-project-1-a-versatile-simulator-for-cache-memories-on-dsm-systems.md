@@ -3,7 +3,7 @@ layout: post
 kind: post
 title: A versatile simulator for cache memories on DSM systems
 tags:
-- project
+- Project
 - Big Data
 - Cache memories
 entry: project-entry-1
