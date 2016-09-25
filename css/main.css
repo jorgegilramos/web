@@ -6,7 +6,7 @@
 html, body {
   background-color: #fff;
   color: #444;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "din-regular","Helvetica Neue",Helvetica,Arial,sans-serif;
   /*font-family: "webfont-light",Times;*/
   font-size: 18px;
   margin: 0;
@@ -40,7 +40,8 @@ h1#site-title:hover {
 h2{
   background:#d1e7bf; /* #e1e7d0;*/
   border-radius:4px;
-  font-family: "webfont-regular",Times;
+  /*font-family: "webfont-regular",Times;*/
+  font-family: "din-regular",Times;
   padding:0 10px;
 }
 #logo {
@@ -149,6 +150,7 @@ html.mm-opening #hamburger:after {
 
 .navbar {
   border: medium none;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   float: right;
 }
 .navbar, .navbar-inner, .nav, .navbar-inverse {
@@ -489,7 +491,7 @@ ol.toc.sticky {
 }
 
 
-@font-face {
+/*@font-face {
     font-family: "webfont-light";
     src: url("../fonts/webfont/webfont-light.eot?#iefix") format("embedded-opentype"), url("../fonts/webfont/webfont-light.woff") format("woff");
 }
@@ -508,7 +510,27 @@ ol.toc.sticky {
 @font-face {
     font-family: "webfont-thin";
     src: url("../fonts/webfont/webfont-thin.eot?#iefix") format("embedded-opentype"), url("../fonts/webfont/webfont-thin.woff") format("woff");
+}*/
+
+@font-face {
+    font-family: "din-regular";
+    font-style: normal;
+    src: url("../fonts/dinregular/dinregular.ttf") format("truetype"),
+    url("../fonts/dinregular.eot") format("embedded-opentype"),
+    url("../fonts/dinregular.eot#iefix") format("embedded-opentype"),
+    url("../fonts/dinregular.woff") format("woff");
 }
+
+@font-face {
+    font-family:"din-light";
+    font-style: normal;
+    src: url("../fonts/dinlight/dinlight.ttf") format("truetype"),
+    url("../fonts/dinlight/dinlight.eot") format("embedded-opentype"),
+    url("../fonts/dinlight/dinlight.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/dinlight/dinlight.woff") format("woff"),
+    url("../fonts/dinlight/dinlight.woff2") format("woff2")
+}
+
 /* post tag */
 .post-tag {
     color: #39739d;
@@ -531,7 +553,7 @@ ol.toc.sticky {
 
 /* tagcloud */
 .widget_tag_cloud .tagcloud , #tagcloud {
-  padding-top:30px;
+  padding:30px 0;
 }
 .widget_tag_cloud .tagcloud a, #tagcloud a {
   background: url("../img/tags_bg.png") no-repeat scroll right -28px rgba(0, 0, 0, 0);
@@ -746,7 +768,8 @@ ol.toc.sticky {
 .content-body ul, .content-body ol, .content-body dl,
 .content-body table,
 .content-body pre {
-  font-family: "webfont-light",Times;
+  /*font-family: "webfont-light",Times;*/
+  font-family: "din-regular",Times;
   font-size: 20px;
   margin:15px 0;
   padding:0px 10px
@@ -871,7 +894,8 @@ hr {
   font-size: small;
 }
 .blog-post p {
-  font-family: "webfont-light",Times;
+  /*font-family: "webfont-light",Times;*/
+  font-family: "din-regular",Times;
   font-size: 20px;
   padding: 0 10px;
 }
