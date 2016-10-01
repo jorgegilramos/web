@@ -658,6 +658,10 @@ ol.toc.sticky {
     padding-left:10px;
     padding-right:10px;
   }
+  article #center-body {
+    padding-left:10px;
+    padding-right:10px;
+  }
 }
 @media only screen and (max-width: 767px) {
   html, body {
@@ -673,6 +677,10 @@ ol.toc.sticky {
   }
   section .content-body {
     width: 100%;
+    padding-left:10px;
+    padding-right:10px;
+  }
+  article #center-body {
     padding-left:10px;
     padding-right:10px;
   }
@@ -744,6 +752,10 @@ ol.toc.sticky {
     display:none;
   }
   .content-body {
+    padding-left:10px;
+    padding-right:10px;
+  }
+  article #center-body {
     padding-left:10px;
     padding-right:10px;
   }
@@ -878,6 +890,10 @@ hr {
   color: #eee;
   margin-bottom: 20px;
   margin-top: 20px;
+}
+
+.posts, .tags, .tag-posts {
+  list-style: outside none none;
 }
 
 .blog-post {
