@@ -739,6 +739,10 @@ ol.toc.sticky {
   .touchevents #explore-gutter {
     display:none;
   }
+  .content-body {
+    padding-left:10px;
+    padding-right:10px;
+  }
 }
 #under-construction, #no-js-message {
   background-color:#a2ce7e; /*#1fa67a; #1b926c*/

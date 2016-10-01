@@ -6,7 +6,7 @@ description: Ricardo Jorge Gil Ramos - Personal Page
 ---
 
 <section>
-  <div id="center-body" class="wrap">
+  <div id="" class="wrap">
 {% include slider.html %}
 {% include toc.html %}
     <div class="content-body">
