@@ -655,6 +655,8 @@ ol.toc.sticky {
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   section .content-body {
     width: 500px;
+    padding-left:10px;
+    padding-right:10px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -671,6 +673,8 @@ ol.toc.sticky {
   }
   section .content-body {
     width: 100%;
+    padding-left:10px;
+    padding-right:10px;
   }
   .slides .text_xxl {
     font-size: 6rem;
