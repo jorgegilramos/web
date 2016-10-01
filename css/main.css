@@ -76,7 +76,7 @@ a.profile-icon:hover {
   float:right;
   width: 40px;
   height: 36px;
-  margin: 6px;
+  margin:12px 6px 6px;
   position:relative;
   top: 0;
   left: 0;
@@ -893,7 +893,11 @@ hr {
 }
 
 .posts, .tags, .tag-posts {
-  list-style: outside none none;
+  list-style:outside none none;
+  padding-left:0px;
+}
+.tag-posts li {
+    padding-left:20px;
 }
 
 .blog-post {

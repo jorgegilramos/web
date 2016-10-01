@@ -10,7 +10,6 @@ permalink: /tags/
   <div id="center-body" class="wrap">
     <div class="">
       <section class="content-tags">
-        <h1>Tags</h1>
         <ul class="tags">
           {% for tag in site.tags %}
           <li>
