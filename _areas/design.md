@@ -4,6 +4,8 @@ title: Design
 permalink: /design/
 order: 5
 description: Ricardo Jorge Gil Ramos - Personal Page
+urlprev: maps
+urlnext: references
 tags:
 - Design
 ---

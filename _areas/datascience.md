@@ -4,6 +4,8 @@ title: Data Science
 permalink: /datascience/
 order: 3
 description: Ricardo Jorge Gil Ramos - Personal Page
+urlprev: javascript
+urlnext: maps
 tags:
 - Data Science
 - Data Analytics

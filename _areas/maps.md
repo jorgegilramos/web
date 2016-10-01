@@ -4,6 +4,8 @@ title: Maps
 permalink: /maps/
 order: 4
 description: Ricardo Jorge Gil Ramos - Personal Page
+urlprev: datascience
+urlnext: design
 tags:
 - Maps
 ---

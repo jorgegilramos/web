@@ -3,6 +3,8 @@ layout: default
 permalink: /
 title: Ricardo Jorge Gil Ramos - Personal Page
 description: Ricardo Jorge Gil Ramos - Personal Page
+urlprev: references
+urlnext: bigdata
 ---
 
 <section>

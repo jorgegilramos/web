@@ -4,6 +4,8 @@ title: Javascript
 permalink: /javascript/
 order: 2
 description: Ricardo Jorge Gil Ramos - Personal Page
+urlprev: bigdata
+urlnext: datascience
 tags:
 - javascript
 ---

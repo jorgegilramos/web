@@ -4,6 +4,8 @@ title: Big Data
 permalink: /bigdata/
 order: 1
 description: Ricardo Jorge Gil Ramos - Personal Page
+urlprev: .
+urlnext: javascript
 tags:
 - Big Data
 ---
