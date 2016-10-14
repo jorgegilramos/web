@@ -84,7 +84,7 @@ $(function(){
   
   // Inialize slideshow
   if ($('#slider-1').length) {
-	  var slideshow = new SlideWidget({
+	  /*var slideshow = new SlideWidget({
 	  	container: '#slider-1',
 	  	startSlide: 0,
 	  	speed: 500,
@@ -92,8 +92,27 @@ $(function(){
 	  	margin: 20
 	  });
 	  slideshow.swipe.transitionEnd();
-    // Start the show!
-    slideshow.swipe.resume();
+      // Start the show!
+      slideshow.swipe.resume();*/
+    
+    /*window.mySwipe = new Swipe(document.getElementById('slider-1'), {
+      startSlide: 1,
+      speed: 400,
+      auto: 3000,
+      continuous: true,
+      disableScroll: false,
+      stopPropagation: false,
+      callback: function(index, elem) {},
+      transitionEnd: function(index, elem) {}
+    });*/
+    window.mySwipe = $('#slider-1').Swipe({auto:6000,speed:400,margin:20
+        ,callback: function(index, elem) {
+            $("*[data-slide]").filter(".selected").removeClass("selected");
+            $("*[data-slide="+index+"]").addClass("selected");
+        }}).data('Swipe');
+    $(".slide-back").bind("click", function(){window.mySwipe.prev()});
+    $(".slide-next").bind("click", function(){window.mySwipe.next()});
+    $("*[data-slide]").bind("click", function(){window.mySwipe.slide($(this).data("slide"), 400)});
   }
   // Initalize the ToC if we're on an article page
   if ($('.js-toc').length) {
