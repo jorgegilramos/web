@@ -118,6 +118,116 @@ urlnext: bigdata
           </div>
           <p style="clear:both"></p>
       </section>
+      <section class="content-what">
+        <p>
+          <a class="toc-item" title="What's done?" id="what"></a>
+        </p>
+        <h2>
+          What's done?
+        </h2>
+        <!-- Article entry -->
+        <article class="blog-post">
+          <div class="row entry">
+            <div class="col-sm-1 scrollimation fade-up in">
+              <div id="publication-entry-1" class="media">
+                <div style="overflow: hidden" class="media-body">
+                  <h4>A versatile simulator for cache memories on DSM systems</h4>
+                  <time datetime="2005-06-01">Published on June 1, 2005</time>
+                  <p>
+                    Proceedings 19th European Conference on Modeling and Simulation, Riga, Latvia
+                  </p>
+                  <p>
+                    “A versatile simulator for cache memories on DSM systems”. Proceedings 19th European Conference on Modeling and Simulation Yuri Merkuryev, Richard Zobel, Eugène Kerckhoffs © ECMS, 2005 ISBN 1-84233-112-4 (Set) / ISBN 1-84233-113-2 (CD) 
+                  </p>
+                  <p><a href="http://www.scs-europe.net/services/ecms2005/pdf/h-1024.pdf" target="_blank">http://www.scs-europe.net/services/ecms2005/pdf/h-1024.pdf</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!-- Article entry -->
+        <article class="blog-post">
+          <div class="row entry">
+            <div class="col-sm-1 scrollimation fade-up in">
+              <div id="publication-entry-2" class="media">
+                <div style="overflow: hidden" class="media-body">
+                  <h4>Simulador de protocolos basados en directorio para la coherencia caché en multiprocesadores</h4>
+                  <time datetime="2004-09-15">Published on September 15, 2004</time>
+                  <p>
+                    Computación de altas prestaciones: actas de las XV Jornadas de Paralelismo, Almería
+                  </p>
+                  <p>
+                    “Simulador de protocolos basados en directorio para la coherencia caché en multiprocesadores”: Computación de altas prestaciones: actas de las XV Jornadas de Paralelismo, Almería, 15, 16 y 17 de septiembre de 2004 / Grupo de Investigación Supercomputación-Algoritmos (dir. congr.), 2004, ISBN 84-8240-714-7, pags. 179-183) 
+                  </p>
+                  <p><a href="http://www.unex.es/investigacion/grupos/ARCO/estructura/publicaciones/pagina_publicacion?listado_personal=1&idpublicacion=4394" target="_blank">http://www.unex.es/investigacion/grupos/ARCO/estructura/publicaciones/pagina_publicacion?listado_personal=1&idpublicacion=4394</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!-- Article entry -->
+        <article class="blog-post">
+          <div class="row entry">
+            <div class="col-sm-1 scrollimation fade-up in">
+              <div id="javascript-entry-2" class="media">
+                <div style="overflow: hidden" class="media-body">
+                  <h4>screen-dpi-detector</h4>
+                  <time datetime="2014-11-23">November 23, 2014</time>
+                  <div class="post-taglist">
+                    <a href="{{ site.baseurl }}/tags/#javascript-ref" class="post-tag">javascript</a>
+                    <a href="{{ site.baseurl }}/tags/#screen-dpi-detector-ref" class="post-tag">screen-dpi-detector</a>
+                  </div>
+                  <p>
+                    Screen resolution pixel density (dppx, dpi) detector in javascript based in feature detection.
+                  </p>
+                  <p>
+                  Also indentify ldpi, mdpi, hdpi, xhdpi, xxhdpi and xxxhdpi displays.
+                  </p>
+                  <p>
+                  Detect:
+                    <ul>
+                      <li>ldpi (low) ~120dpi</li>
+                      <li>mdpi (medium) ~160dpi</li>
+                      <li>hdpi (high) ~240dpi</li>
+                      <li>xhdpi (extra-high) ~320dpi</li>
+                      <li>xxhdpi (extra-extra-high) ~480dpi</li>
+                      <li>xxxhdpi (extra-extra-extra-high) ~640dpi</li>
+                    </ul>
+                  </p>
+                  <p><a href="./test/demo.html" target="_blank">Demo screen.dpi.detector.js</a></p>
+                  <p>Github repository: <a href="https://github.com/jorgegilramos/screen-dpi-detector" target="_blank">https://github.com/jorgegilramos/screen-dpi-detector</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!-- Article entry -->
+        <article class="blog-post">
+          <div class="row entry">
+            <div class="col-sm-1 scrollimation fade-up in">
+              <div id="javascript-entry-1" class="media">
+                <div style="overflow: hidden" class="media-body">
+                  <h4>hdpi-detector</h4>
+                  <time datetime="2014-11-09">November 9, 2014</time>
+                  <div class="post-taglist">
+                    <a href="{{ site.baseurl }}/tags/#javascript-ref" class="post-tag">javascript</a>
+                    <a href="{{ site.baseurl }}/tags/#hdpi-detector-ref" class="post-tag">hpi-detector</a>
+                  </div>
+                  <p>
+                    Simple hdpi screen detector in javascript (High Dots Per Inch) based in feature detection.
+                  </p>
+                  <p>
+                    Compatible with modernizr library.
+                  </p>
+                  <p><a href="./test/demo_javascript.html" target="_blank">Demo hdpi.detector.js with javascript</a></p>
+                  <p><a href="./test/demo_css.html" target="_blank">Demo hdpi.detector.js with css class</a></p>
+                  <p>Github repository: <a href="https://github.com/jorgegilramos/hdpi-detector" target="_blank">https://github.com/jorgegilramos/hdpi-detector</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
       <section class="content-posts">
         <p>
           <a class="toc-item" title="Posts" id="Posts"></a>
