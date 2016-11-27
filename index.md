@@ -233,14 +233,17 @@ urlnext: bigdata
           <a class="toc-item" title="Posts" id="Posts"></a>
         </p>
         <h2>Posts</h2>
-        <ul class="posts">
+        <div class="posts">
           {% for post in site.posts %}
-            <li>
-              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-              <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-            </li>
+            <article class="blog-post">
+              <div class="row entry">
+                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                <!--span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span-->
+                <time datetime="{{ post.date | date: "%F" }}">{{ post.date | date: "%b %-d, %Y" }}{% if post.author %} - {{ post.author }}{% endif %}{% if post.meta %} - {{ post.meta }}{% endif %}</time>
+              </div>  
+            </article>
           {% endfor %}
-        </ul>
+        </div>
       </section>
     </div>
   </div>
