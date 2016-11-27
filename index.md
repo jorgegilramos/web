@@ -12,15 +12,15 @@ urlnext: bigdata
 {% include slider.html %}
 {% include toc.html %}
     <div class="content-body">
-      <section class="content-wellcome">
+      <section class="content-welcome">
           <p>
-            <a class="toc-item" title="Wellcome" id="wellcome"></a>
+            <a class="toc-item" title="Welcome" id="welcome"></a>
           </p>
           <h2>
-            Wellcome
+            Welcome
           </h2>
           <p><i class="fa fa-child fa-lg"></i>
-          Wellcome to my personal site. My name is Ricardo Jorge Gil Ramos.</p>
+          Welcome to my personal site. My name is Ricardo Jorge Gil Ramos.</p>
           <p>
           I am a Technology Enthusiastic and Data Scientist. I consider Computer Science to be the subtle art between man and machine,
           an exciting communication path to share knowledge, information an emotions.</p>
