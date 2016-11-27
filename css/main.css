@@ -381,6 +381,11 @@ html .mm-header .mm-prev, html .mm-header .mm-next {
   display: table;
   clear: both;
 }*/
+.slides:before, .slides:after{
+  content: " ";
+  display: table;
+  clear: both;
+}
 .swipe {
   overflow: hidden;
   visibility: hidden;
@@ -388,6 +393,7 @@ html .mm-header .mm-prev, html .mm-header .mm-next {
   background: #fbf8f5;
   color:#625f5d;
   text-align: center;
+  padding:20px 0px 0px;
   width:100%;
 }
 .swipe-wrap {
@@ -757,9 +763,19 @@ ol.toc.sticky {
   .navbar .nav > li {
     float:none;
   }
-  .slide .text_xxl {
+  .swipe {
+    padding:0px;
+  }
+  .slide-content .text_xxl {
     font-size: 4rem;
     line-height: 6rem;
+  }
+  .slide-content .text_medium {
+    font-size: 1.7rem;
+  }
+  .slides-nav {
+    padding-bottom: 0;
+    padding-top: 0;
   }
   .slides-nav .icon-prev-slide {
     margin-right: 1rem;
@@ -775,8 +791,8 @@ ol.toc.sticky {
     padding-right:10px;
   }
   article #center-body {
-    padding-left:10px;
-    padding-right:10px;
+    padding-left:0px;
+    padding-right:0px;
   }
 }
 #under-construction, #no-js-message {
